@@ -14,7 +14,7 @@ export default class Tree extends React.Component {
     const {nodeMarginLeft} = this.props;
 
     return (
-      <div key={key} className="tree-node" style={{...style, marginLeft: node.deepness * nodeMarginLeft}}>
+      <div key={key} className="tree-node" style={{...style, paddingLeft: node.deepness * nodeMarginLeft}}>
         <NodeRenderer node={node} onChange={this.props.onChange} measure={measure} />
       </div>
     );
